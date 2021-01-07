@@ -1,0 +1,18 @@
+*envstack.txt* Set an environment using env files
+
+Functions:
+*SetEnv({env_files})*
+
+Set the environment based on a list of .env files. Environment variables in
+later env files will overwrite environment variables in earlier files.
+
+For list type variables, the new values are prepended to the existing value
+with the os specific path separator.
+
+Standard list environment variables are
+    - PATH
+    - PYTHONPATH
+    - PATHEXT
+    - PSMODULEPATH
+
+Define additional list environment variables with *g:list_env*
